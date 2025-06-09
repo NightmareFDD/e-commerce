@@ -31,6 +31,15 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+# === Env & Secrets ===
+.env
+*.env
+**/*.env
+*.secret
+*.credentials
+application-prod.properties
+application-dev-secret.properties
+
 ### VS Code ###
 .vscode/
 
