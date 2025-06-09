@@ -13,6 +13,7 @@
     <modules>
         <module>common-lib</module>
         <module>product-service</module>
+        <module>order-service</module>
     </modules>
 
     <properties>
