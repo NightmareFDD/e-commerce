@@ -1,0 +1,12 @@
+### POST request to create a new product
+POST localhost:8081/api/products
+Content-Type: application/json
+
+{
+  "name": "iPhone 14",
+  "description": "Short description of the product",
+  "price": "799.0",
+  "available": false
+}
+
+###

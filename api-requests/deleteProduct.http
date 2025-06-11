@@ -1,0 +1,4 @@
+### DELETE request to delete a Product
+DELETE http://localhost:8081/api/products/3
+
+###

@@ -1,4 +1,4 @@
-package com.lumastyle.common.error;
+package com.lumastyle.product.exception;
 
 import lombok.Builder;
 import lombok.Getter;

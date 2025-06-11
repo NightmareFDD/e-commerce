@@ -1,0 +1,12 @@
+### PUT request update a Product
+PUT http://localhost:8081/api/products/2
+Content-Type: application/json
+
+{
+  "name": "iPhone",
+  "description": "This is another (updated) short description",
+  "price": "650",
+  "available": true
+}
+
+###
