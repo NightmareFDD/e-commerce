@@ -10,5 +10,4 @@ public interface ProductMapper {
 
     ProductResponse toResponse(Product product);
 
-    void updateEntityFromRequest(ProductRequest request, Product existingProduct);
 }

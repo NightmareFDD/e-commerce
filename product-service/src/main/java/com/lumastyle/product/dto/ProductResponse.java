@@ -16,5 +16,10 @@ public class ProductResponse {
     private String name;
     private String description;
     private BigDecimal price;
-    private boolean available;
+    private Boolean available;
+    private Long categoryId;
+    private String categoryName;
+    private Long brandId;
+    private String brandName;
+    private String tags;
 }

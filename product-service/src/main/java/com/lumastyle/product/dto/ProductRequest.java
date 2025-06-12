@@ -27,5 +27,14 @@ public class ProductRequest {
     @DecimalMin(value = "0.0", inclusive = false, message = "Price must be greater than 0")
     private BigDecimal price;
 
-    private boolean available;
+    @NotNull
+    private Boolean available;
+
+    @NotNull(message = "Category id must not be blank")
+    private Long categoryId;
+
+    @NotNull(message = "Brand id must not be blank")
+    private Long brandId;
+
+    private String tags;
 }
