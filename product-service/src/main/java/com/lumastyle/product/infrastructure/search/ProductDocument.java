@@ -32,6 +32,9 @@ public class ProductDocument {
     @Field(type = FieldType.Double)
     private BigDecimal price;
 
+    @Field(type = FieldType.Boolean)
+    private Boolean available;
+
     @Field(type = FieldType.Long)
     private Long categoryId;
 

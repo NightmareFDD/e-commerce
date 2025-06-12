@@ -3,10 +3,13 @@ POST localhost:8081/api/products
 Content-Type: application/json
 
 {
-  "name": "iPhone 14",
-  "description": "Short description of the product",
-  "price": "799.0",
-  "available": false
+  "name": "Černé kalhoty",
+  "description": "Elegantní bavlněné kalhoty",
+  "price": 1599.99,
+  "available": true,
+  "categoryId": 1,
+  "brandId": 2,
+  "tags": "black,summer,casual,t-shirt,tshirt"
 }
 
 ###

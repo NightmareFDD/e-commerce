@@ -6,11 +6,10 @@ import com.lumastyle.product.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Slf4j
 @Validated
@@ -35,9 +34,19 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<ProductResponse> getAllProducts() {
-        log.info("Received request to get all products");
-        return service.getAllProducts();
+    public Page<ProductResponse> getAllProducts(@RequestParam(name = "page", defaultValue = "0") int page,
+                                                @RequestParam(name = "size", defaultValue = "10") int size) {
+        log.info("Received request to list products - page: {}, size: {}", page, size);
+        return service.getAllProducts(page, size);
+    }
+
+    @GetMapping("/search")
+    public Page<ProductResponse> searchProducts(
+            @RequestParam(name = "query") String query,
+            @RequestParam(name = "page", defaultValue = "0") int page,
+            @RequestParam(name = "size", defaultValue = "10") int size) {
+        log.info("Received search request - query: '{}', page: {}, size: {}", query, page, size);
+        return service.searchProducts(query, page, size);
     }
 
     @PutMapping("/{id}")
