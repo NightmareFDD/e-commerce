@@ -1,4 +1,4 @@
 ### GET request to get a product by passed ID
-GET http://localhost:8081/api/products/3
+GET http://localhost:8081/api/products/1
 
 ###
