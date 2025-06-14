@@ -10,7 +10,7 @@ import org.springframework.cache.annotation.EnableCaching;
 		info = @Info(
 				title = "Product Service API",
 				version = "1.0",
-				description = "API pro správu produktového katalogu"
+				description = "API for managing product"
 		)
 )
 @SpringBootApplication
